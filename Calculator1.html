@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalculator</title>
+</head>
+<body>
+    <script>
+        var num1=parseFloat(prompt("Введіть перше значення!"));   //parseFloat-дає можливість виконувати операції з не цілими числами. 
+        var sumvol=prompt("Введіть символ математичної операції");//при цьому якщо використаємо кому (3,1) видає результат лише цілих чисел.
+        var num2=parseFloat(prompt("Введіть друге значення!"));
+        var res;
+        switch(sumvol) {                //Використовуємо switch для розрахунку.
+            case"+":                    // Щоб не використовувати if/else
+               res=num1+num2;           //так простіше :))
+            break;
+            
+            case"-":
+               res=num1-num2;
+            break;
+            
+            case"/":
+               res=num1/num2;
+            break;
+            
+            case"*":
+               res=num1*num2;
+            break;
+            default:
+               res="Невідомий символ!";  //Буде виведено повідомлення "Невідомий символ!" якщо ввести невідомий символ.
+                                         
+        }
+    
+    document.write(res); //Виводимо результат.
+    
+    </script>
+</body>
+</html>
